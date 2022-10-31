@@ -45,4 +45,13 @@ public class Mercado {
         }
     }
 
+    private static void comprarProduto() {
+    }
+
+    private static void listarProduto() {
+    }
+
+    private static void cadastrarProduto() {
+    }
+
 }
