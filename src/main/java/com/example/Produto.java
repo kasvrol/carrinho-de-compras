@@ -4,9 +4,14 @@ import com.example.Utils;
 
 public class Produto {
     private static int count = 1;
-    private int id;
-    private String name;
-    private Double price;
+    protected int id;
+    protected String name;
+    protected Double price;
+
+    /**
+     * @param name
+     * @param price
+     */
 
     public int getId() {
         return id;
@@ -28,7 +33,7 @@ public class Produto {
         this.name = name;
     }
 
-    public void Produto(String name, Double price) {
+    public Produto(String name, Double price) {
         this.id = Produto.count;
         this.name = name;
         this.price = price;
