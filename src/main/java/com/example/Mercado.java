@@ -10,4 +10,9 @@ public class Mercado {
     private static ArrayList<Produto> produtos;
     private static Map<Produto, Integer> carrinho;
 
+    public static void main(String[] args) {
+        produtos = new ArrayList<>();
+        carrinho = new HashMap<>();
+    }
+
 }
