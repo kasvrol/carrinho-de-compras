@@ -36,12 +36,34 @@ public class Mercado {
                 comprarProduto();
                 break;
             case 4:
+                verCarrinho();
+                break;
+            case 5:
                 System.out.println("Obrigada pela preferência");
                 // System.exit();
             default:
                 System.out.println("Opção inválida!");
                 menu();
                 break;
+        }
+    }
+
+    private static void verCarrinho() {
+        System.out.println("Produtos no carrinho: \n");
+        if (produtos.size() > 0) {
+            for (Produto p : produtos) {
+                System.out.println("Produto: " + p + "\n" + "Quantidade: " + carrinho.get(p));
+            }
+        } else {
+            System.out.println("Não existe produto no carrinho, deseja adicionar?");
+            System.out.println(" Digite 1 para sim, ou 0 para sair. \n");
+            int option = Integer.parseInt(input.next());
+
+            if (option == 1) {
+                comprarProduto();
+            } else {
+                System.exit(option);
+            }
         }
     }
 
