@@ -49,6 +49,17 @@ public class Mercado {
     }
 
     private static void listarProduto() {
+        if (produtos.size() > 0) {
+            System.out.println("Listar produtos! \n");
+
+            for (Produto p : produtos) {
+                System.out.println(p);
+            }
+        } else {
+            System.out.println("Nenhum produto cadastrado!");
+        }
+
+        menu();
     }
 
     private static void cadastrarProduto() {
